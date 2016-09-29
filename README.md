@@ -16,11 +16,11 @@ Add the following text to `~/.config/terminator/config`
 ```config
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  always_on_top = True
-  tab_position = bottom
+  always_on_top = False
+  tab_position = top
   sticky = True
 [keybindings]
-  hide_window = F12
+  hide_window = F3
 [profiles]
   [[default]]
     background_darkness = 0.75
@@ -33,7 +33,7 @@ Add the following text to `~/.config/terminator/config`
       type = Window
       order = 0
       parent = ""
-      size = 1679, 298
+      size = 1679, 500
     [[[child1]]]
       position = 839
       type = HPaned
@@ -60,4 +60,4 @@ Add the following text to `~/.config/terminator/config`
       parent = ""
 [plugins]
 ```
-This will configure terminator to accept the F12 button as a hide/show command wherever you are and will initially create a session with two terminals when you start terminator
+This will configure terminator to accept the F3 button as a hide/show command wherever you are and will initially create a session with two terminals when you start terminator
